@@ -1,0 +1,71 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Collage Maker
+      </h1>
+    </header>
+
+    <main>
+      <input type="text" id ="src" value="https://staticak-apps.abendblatt.de/dpa-wahlmodul/pw_usa/img/c1204.png?v=4"/>
+      <button id="lo">
+        links oben
+      </button>
+      <button id="mo">
+        mitte oben
+      </button>
+      <button id="ro">
+        rechts oben
+      </button>
+      <button id="lu">
+        links unten
+      </button>
+      <button id="mu">
+        mitte unten
+      </button>
+      <button id="ru">
+        rechts unten
+      </button>
+      <canvas width="2000" height="2000" id="x">
+                                   
+                                   
+      </canvas>
+    </main>
+
+    <footer>
+      
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
