@@ -35,12 +35,13 @@ name_spaced_com.on('connection', function (socket) {
     
     let newsrc = request.query.src
     
-    let place = request.query.place
+    let x = request.query.x
+    let y = request.query.y
     
 
-    response.send("ok" +  (newsrc ? ", setze " + newsrc + " auf " + place  : ", mache aber nix"))
+    response.send("ok" +  (newsrc ? ", setze " + newsrc + " auf " + x +"," + y  : ", mache aber nix"))
     
-    name_spaced_com.emit('newsrc', newsrc, place);
+    name_spaced_com.emit('newsrc', newsrc, x, y);
   });
 });
 
